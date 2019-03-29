@@ -5,10 +5,10 @@ import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 
 const StyApp = styled.div`
-  text-align: center;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
 `;
 
 class App extends Component {

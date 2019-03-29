@@ -26,7 +26,7 @@ const StyHeader = styled.div`
 `;
 
 const StyText = styled.div`
-    animation: ${fadein} 3s linear;
+    animation: ${fadein} 2s linear;
 `;
 
 class Home extends Component {
