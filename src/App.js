@@ -20,13 +20,24 @@ class App extends Component {
                     content: _.shuffle([0,1,2,3,4,5,6,7,8])};
 
         this.updatePage = this.updatePage.bind(this);
-        this.updateIndex = this.updateIndex.bind(this)
+        this.updateIndexR = this.updateIndexR.bind(this);
+        this.updateIndexL = this.updateIndexL.bind(this);
     }
 
-    updateIndex(){
+    updateIndexR(){
         let newIndex = this.state.index + 1;
         if(newIndex === 9){
             this.setState({index: 0});
+        }
+        else {
+            this.setState({index: newIndex});
+        }
+    }
+
+    updateIndexL(){
+        let newIndex = this.state.index - 1;
+        if(newIndex === -1){
+            this.setState({index: 8});
         }
         else {
             this.setState({index: newIndex});
@@ -41,7 +52,7 @@ class App extends Component {
         return(
             <StyApp>
                 <View currPage={this.state.currPage} content={this.state.content} index={this.state.index}/>
-                <Footer updatePage={this.updatePage} updateIndex={this.updateIndex}/>
+                <Footer updatePage={this.updatePage} updateIndexR={this.updateIndexR} updateIndexL={this.updateIndexL}/>
             </StyApp>
         );
     }

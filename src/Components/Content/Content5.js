@@ -10,8 +10,7 @@ class Content5 extends Component {
     render(){
         return(
             <StyView>
-                Facebook
-                <ReactPlayer style={{marginLeft:'7vw'}} width='150vh' height='83vh' url='https://m.facebook.com/story.php?story_fbid=1906370912780567&id=100002230317207' controls playing loop/>
+                <ReactPlayer style={{marginLeft:'7vw'}} width='150vh' height='83vh' url='https://www.youtube.com/watch?v=5RsOkhR6KBc' controls playing loop/>
             </StyView>
         );
     }

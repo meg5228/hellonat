@@ -4,13 +4,13 @@ import { TwitterVideoEmbed } from 'react-twitter-embed';
 
 const StyView = styled.div`
     text-align: center;
+    margin-left: 35vw;
 `;
 
 class Content6 extends Component {
     render(){
         return(
             <StyView>
-                Twitter6
                 <TwitterVideoEmbed id="1040459972646121474" />
             </StyView>
         );
