@@ -1,31 +1,21 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import VIEWS from '../Views';
-import Home from "./Home/Home";
+import ReactPlayer from "react-player";
 
 const StyView = styled.div`
     text-align: center;
 `;
 
 class Content extends Component {
-    selectPage(){
-        switch (this.props.currPage) {
-            case VIEWS.HOME:
-                return <Home/>;
-            case VIEWS.CONTENT:
-                return <Content/>;
-            default:
-                return <Home/>;
-        }
-    }
-
     render(){
         return(
             <StyView>
-                {this.selectPage()}
+                <ReactPlayer url='https://giant.gfycat.com/DapperOfficialBat.webm' playing loop/>
             </StyView>
         );
     }
 }
+
+
 
 export default Content;

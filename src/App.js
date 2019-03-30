@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import VIEWS from "./Views";
-import Content from "./Components/Content";
+import View from "./Components/View";
 import Footer from "./Components/Footer";
 
 const StyApp = styled.div`
@@ -26,7 +26,7 @@ class App extends Component {
     render(){
         return(
             <StyApp>
-                <Content/>
+                <View currPage={this.state.currPage}/>
                 <Footer updatePage={this.updatePage}/>
             </StyApp>
         );

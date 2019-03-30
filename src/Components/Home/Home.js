@@ -27,6 +27,8 @@ const StyHeader = styled.div`
 
 const StyText = styled.div`
     animation: ${fadein} 2s linear;
+    margin-right: 10%;
+    margin-left: 10%;
 `;
 
 class Home extends Component {
@@ -34,7 +36,12 @@ class Home extends Component {
         return (
             <StyHome>
                 <StyHeader>Hello Nat!</StyHeader>
-                <StyText>Hey girl heres some text for you and itll fade in</StyText>
+                <StyText>Hi honey! I love you very much! I know I can't always be there when you're sad...
+                    whether because I'm asleep, or away from my phone, or just plain not there to give you a hug.
+                    So to hopefully help out, I made this website for you! It has all of your favorite funny pick-me-ups
+                    on it, and lots of videos I know that you like. So feel free to hit one of the arrow buttons to move to the first one
+                    that will hopefully help you start feeling better! <br/>
+                    ~Love, Megan. </StyText>
             </StyHome>
         );
     }

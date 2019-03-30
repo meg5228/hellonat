@@ -5,8 +5,12 @@ import LArrowimg from '../../Resources/leftarrow.png';
 
 const StyLArrow = styled.img`
     max-height: 100%;
-    border: solid red;
-    flex: 1;
+    border-radius: 100%;
+    flex: 0.5;
+    
+    &:hover{
+        background-color: rgba(0, 107, 24, 0.40);
+    }
 `;
 
 class LArrow extends Component {
