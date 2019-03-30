@@ -17,7 +17,7 @@ class App extends Component {
         super(props);
         this.state = {currPage: VIEWS.HOME,
                     index: 0,
-                    content: _.shuffle([1,2,3,4,5,6,7,8,9])};
+                    content: _.shuffle([0,1,2,3,4,5,6,7,8])};
 
         this.updatePage = this.updatePage.bind(this);
         this.updateIndex = this.updateIndex.bind(this)
@@ -40,7 +40,7 @@ class App extends Component {
     render(){
         return(
             <StyApp>
-                <View currPage={this.state.currPage}/>
+                <View currPage={this.state.currPage} content={this.state.content} index={this.state.index}/>
                 <Footer updatePage={this.updatePage} updateIndex={this.updateIndex}/>
             </StyApp>
         );

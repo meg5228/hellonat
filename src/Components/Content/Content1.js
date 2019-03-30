@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ReactPlayer from "react-player";
 
 const StyView = styled.div`
     text-align: center;
 `;
 
-class Content extends Component {
+class Content1 extends Component {
     render(){
         return(
             <StyView>
-                <ReactPlayer url='https://giant.gfycat.com/DapperOfficialBat.webm' playing loop/>
+                baby tiktok
             </StyView>
         );
     }
@@ -18,4 +17,4 @@ class Content extends Component {
 
 
 
-export default Content;
+export default Content1;
