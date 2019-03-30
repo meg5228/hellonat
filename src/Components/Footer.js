@@ -26,9 +26,9 @@ class Footer extends Component {
     render() {
         return (
             <StyFooter>
-                <LArrow name = {VIEWS.CONTENT} updatePage = {this.props.updatePage}/>
+                <LArrow name = {VIEWS.CONTENT} updatePage = {this.props.updatePage} updateIndex={this.props.updateIndex}/>
                 <StyMid/>
-                <RArrow name = {VIEWS.CONTENT} updatePage = {this.props.updatePage}/>
+                <RArrow name = {VIEWS.CONTENT} updatePage = {this.props.updatePage} updateIndex={this.props.updateIndex}/>
             </StyFooter>
         );
     }

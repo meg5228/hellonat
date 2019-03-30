@@ -16,7 +16,7 @@ const StyLArrow = styled.img`
 class LArrow extends Component {
     render() {
         return (
-            <StyLArrow src={LArrowimg} onClick={() => this.props.updatePage(this.props.name)} alt={"Left Arrow"}/>
+            <StyLArrow src={LArrowimg} onClick={(event) => { this.props.updatePage(this.props.name); this.props.updateIndex();}} alt={"Left Arrow"}/>
         );
     }
 }
